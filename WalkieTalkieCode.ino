@@ -1,9 +1,6 @@
 /*
   FILENAME:   WalkieTalkieWorkshop.ino
   DATE: November 28, 2018
-  Modified example from Orlando S. Hoilett, orlandohoilett@gmail.com 2015
-  RF24 Audio Library TMRh20 2014
-
 */
 
 #include <userConfig.h>
@@ -12,7 +9,7 @@
 #include <RF24Audio.h>
 #include "printf.h"    // General includes for radio audio lib
 
-int radioID = 50;     
+//int radioID = ;      //radio address, must be 0-124. Walkie talkie can only transmit to radio with the same adress. 
 int talkButton = 3;
 
 RF24 radio(7,8);                    // Set radio up using pins 7 (CE) 8 (CS)
@@ -26,7 +23,7 @@ void setup() {
   
   printf_begin();
   radio.begin();                    //initializes radio library
-  radio.setChannel(radioID);        //sets radio to address between 0 - 124, aka 2.4GHz- 2.525GHz
+  radio.setChannel(radioID);        //sets radio to address 'radioID', aka 2.4GHz- 2.525GHz
   radio.printDetails();             //prints radio info to serial monitor
   rfAudio.begin();                  //initializes radio audio library
   rfAudio.broadcast(radioID);       //cestablish private radio channel
