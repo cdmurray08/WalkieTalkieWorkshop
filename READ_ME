@@ -1,7 +1,18 @@
+This code was altered to satisfy a radio diy workshop event. Several groups were to build radios in groups. Code was 
+altered to include private channel capabilities. 
+
+Idea for the workshop was sparked by the following link: 
+https://www.instructables.com/id/Wristwatch-Walkie-Talkie/
+
+
+The following was written by previous contributors,
 /*
-  FILENAME:   WalkieTalkieCode.ino
-  AUTHOR:     Chris Murray
-  CONTACT:    cdmurray08@gmail.com
+   FILENAME:   walkie talkie basic.ino
+  AUTHOR:     Orlando S. Hoilett
+  CONTACT:    orlandohoilett@gmail.com
+  VERSION:    0.0.0
+  WEBSITE:    http://www.instructables.com/member/ohoilett/
+  
   
   DESCRIPTION
   Simple example for creating a walkie talkie by sending audio
